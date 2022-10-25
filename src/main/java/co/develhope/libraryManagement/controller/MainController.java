@@ -4,13 +4,16 @@ import co.develhope.libraryManagement.model.entities.Invoice;
 import co.develhope.libraryManagement.service.inventory.InvoiceService;
 import co.develhope.libraryManagement.service.inventory.StocktakingService;
 import co.develhope.libraryManagement.service.inventory.WarehouseService;
+import co.develhope.libraryManagement.utils.Roles;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
+@PreAuthorize("hasRole('"+ Roles.CUSTOMER + "') OR hasRole('"+Roles.ADMIN+"')")
 public class MainController {
 
     @Autowired
