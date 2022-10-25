@@ -9,6 +9,7 @@ import co.develhope.libraryManagement.service.library.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.Optional;
 
@@ -24,15 +25,16 @@ public class InvoiceService {
     @Autowired
     private BookService bookService;
 
-    public Invoice create(Invoice invoice, Long bookId, Long userId) throws Exception {
+    public Invoice create(Long bookId, Long userId) throws Exception {
         try{
-
+            Invoice invoice = new Invoice();
             Optional<Book> book = bookService.findById(bookId);
             Optional<User> user = userService.findUserById(userId);
             if(book.isPresent() && user.isPresent()){
                 invoice.setBook(book.get());
                 invoice.setUser(user.get());
                 invoice.setTotalPrice(book.get().getPrice());
+                invoice.setEmissionDate(LocalDate.now());
                 invoiceRepository.save(invoice);
             }
             return invoice;

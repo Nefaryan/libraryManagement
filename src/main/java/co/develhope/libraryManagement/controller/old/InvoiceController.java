@@ -19,11 +19,11 @@ public class InvoiceController {
     private static final Logger logger = LoggerFactory.getLogger(InvoiceController.class);
 
     @PostMapping("/create")
-    public ResponseEntity<?> createInvoice(@RequestBody Invoice invoice, @RequestParam Long bookId,
+    public ResponseEntity<?> createInvoice(@RequestParam Long bookId,
                                            @RequestParam Long userId){
         try {
             logger.info("Create Invoice");
-            return ResponseEntity.status(HttpStatus.OK).body(invoiceService.create(invoice,bookId,userId));
+            return ResponseEntity.status(HttpStatus.OK).body(invoiceService.create(bookId,userId));
 
         }catch (Exception e){
             logger.error(e.toString());

@@ -22,8 +22,8 @@ public class LoginService {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @Value("${JWT_TOKEN}")
-    public static String JWT_SECRET;
+
+    public static String JWT_SECRET = "0813ec65-7824-4dbd-b13a-54bfbc99930b";
 
     @Autowired
     private UserRepository userRepository;

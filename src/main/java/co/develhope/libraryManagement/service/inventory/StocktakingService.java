@@ -89,8 +89,32 @@ public class StocktakingService {
         if(stocktakingToBeUpdate.isEmpty()) throw new Exception("Stocktaking not found");
         warehouseService.getSingle(warehouseId).get().getStocktackingByBookId(bookId)
                .setNumberOfCopies(stocktakingToBeUpdate.get().getNumberOfCopies() + copyToAdd);
-
         return stocktakingToBeUpdate.get();
+    }
+
+    public void updateNumberOfCopies(long bookId, long warehouseId, int numOfCopies) throws Exception {
+        Optional<Stocktaking> optionalStocktaking = stocktakingRepository.findByBook_IdAndWarehouse_Id(bookId, warehouseId);
+        if (optionalStocktaking.isPresent()) {
+            Stocktaking stocktaking = optionalStocktaking.get();
+            stocktaking.setNumberOfCopies(stocktaking.getNumberOfCopies()+numOfCopies);
+            stocktakingRepository.save(stocktaking);
+        }
+        else {
+            // stavo cercando di decrementare il numero di copie (numOfCopies minore di zero) di un inventario
+            // che non esiste
+            if (numOfCopies < 0) {
+                throw new Exception(String.format("Cannot find stocktaking for book: %d and warehouse: %d", bookId, warehouseId));
+            }
+            // se invece il numero di copie è maggiore di zero allora se l'inventario non esiste non è un errore:
+            // è che deve ancora essere creato
+            else {
+                Stocktaking newStocktaking = new Stocktaking();
+                newStocktaking.setBook(bookService.findById(bookId).get());
+                newStocktaking.setWarehouse(warehouseService.getSingle(warehouseId).get());
+                newStocktaking.setNumberOfCopies(numOfCopies);
+                stocktakingRepository.save(newStocktaking);
+            }
+        }
     }
 
 
