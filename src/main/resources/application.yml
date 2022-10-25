@@ -3,9 +3,9 @@ spring:
     pathmatch:
       matching-strategy: ant_path_matcher
   datasource:
-    url: jdbc:mysql://localhost:3306/bookdatabase
-    username: root
-    password: Mospwn13295X
+    url: 
+    username: 
+    password: 
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     database: mysql
@@ -19,8 +19,8 @@ spring:
   mail:
     host: smtp.gmail.com
     port: 587
-    username: nefaryan.devmail@gmail.com
-    password: bqpclgkdxgnwsjwa
+    username:
+    password: 
     properties:
       mail:
         smtp:
