@@ -32,4 +32,16 @@ public class Book {
     private LocalDate publicationDate;
     private String bookGenre;
     private boolean availability;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "invoice_id")
+    private Invoice invoice;
+
+    public Invoice getInvoice() {
+        return invoice;
+    }
+
+    public void setInvoice(Invoice invoice) {
+        this.invoice = invoice;
+    }
 }

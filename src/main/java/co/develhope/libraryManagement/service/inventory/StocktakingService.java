@@ -84,6 +84,7 @@ public class StocktakingService {
         }
     }
 
+    @Deprecated
     public Stocktaking addCopy(Long stockId,Long bookId,Long warehouseId,int copyToAdd) throws Exception {
         Optional<Stocktaking> stocktakingToBeUpdate = stocktakingRepository.findById(stockId);
         if(stocktakingToBeUpdate.isEmpty()) throw new Exception("Stocktaking not found");

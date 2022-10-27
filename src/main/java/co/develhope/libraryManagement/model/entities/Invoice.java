@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -28,6 +30,8 @@ public class Invoice {
     private Book book;
     private double totalPrice;
 
+    @OneToMany(mappedBy = "invoice", orphanRemoval = true)
+    private List<Book> books = new ArrayList<>();
 
 
 }

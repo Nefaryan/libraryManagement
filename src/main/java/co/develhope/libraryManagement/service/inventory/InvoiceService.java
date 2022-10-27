@@ -10,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -42,6 +43,34 @@ public class InvoiceService {
             e.printStackTrace();
             throw new Exception("Incorrect input");
         }
+    }
+
+    public Invoice sellmutipleBook(List<Long> bookId,Long userId) throws Exception {
+        try {
+            Invoice invoice = new Invoice();
+            Optional<User> user = userService.findUserById(userId);
+            List<Book> books = new ArrayList<>();
+            double totalPrice = 0;
+            for (Long id: bookId) {
+                books.add(bookService.findById(id).get());
+            }
+            for (Book book : books) {
+                totalPrice += book.getPrice();
+            }
+            if(!books.isEmpty() && user.isPresent()){
+                invoice.setBooks(books);
+                invoice.setUser(user.get());
+                invoice.setEmissionDate(LocalDate.now());
+                invoice.setTotalPrice(totalPrice);
+                invoiceRepository.save(invoice);
+            }
+            return invoice;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new Exception("Incorrect input");
+        }
+
     }
 
     public Invoice update(Long id, Invoice invoice) throws Exception {
