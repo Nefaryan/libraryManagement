@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -33,15 +34,9 @@ public class Book {
     private String bookGenre;
     private boolean availability;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "invoice_id")
-    private Invoice invoice;
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @JsonIgnore
+    private List<Invoice> invoices;
 
-    public Invoice getInvoice() {
-        return invoice;
-    }
 
-    public void setInvoice(Invoice invoice) {
-        this.invoice = invoice;
-    }
 }

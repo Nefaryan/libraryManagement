@@ -25,13 +25,11 @@ public class Invoice {
     @OneToOne
     @JoinColumn(name = "user_id")
     private User user;
-    @ManyToOne
-    @JoinColumn(name = "book_id")
-    private Book book;
+
     private double totalPrice;
 
-    @OneToMany(mappedBy = "invoice", orphanRemoval = true)
-    private List<Book> books = new ArrayList<>();
+    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    private List<Book> books;
 
 
 }

@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
@@ -32,7 +33,7 @@ public class InvoiceService {
             Optional<Book> book = bookService.findById(bookId);
             Optional<User> user = userService.findUserById(userId);
             if(book.isPresent() && user.isPresent()){
-                invoice.setBook(book.get());
+                invoice.setBooks(new ArrayList<>(Arrays.asList(book.get())));
                 invoice.setUser(user.get());
                 invoice.setTotalPrice(book.get().getPrice());
                 invoice.setEmissionDate(LocalDate.now());
