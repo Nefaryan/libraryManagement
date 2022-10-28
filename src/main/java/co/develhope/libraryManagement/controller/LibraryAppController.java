@@ -1,6 +1,8 @@
 package co.develhope.libraryManagement.controller;
 
 import co.develhope.libraryManagement.model.entities.Invoice;
+import co.develhope.libraryManagement.model.entities.User;
+import co.develhope.libraryManagement.service.UserService;
 import co.develhope.libraryManagement.service.inventory.InvoiceService;
 import co.develhope.libraryManagement.service.inventory.StocktakingService;
 import co.develhope.libraryManagement.service.inventory.WarehouseService;
@@ -27,6 +29,8 @@ public class LibraryAppController {
     WarehouseService warehouseService;
     @Autowired
     InvoiceService invoiceService;
+    @Autowired
+    UserService userService;
 
     private static final Logger logger = LoggerFactory.getLogger(LibraryAppController.class);
 
@@ -56,7 +60,7 @@ public class LibraryAppController {
     }
 
     @PostMapping("/sellMulti")
-    public ResponseEntity<?> sellMultiBook(@RequestParam List<Long> books,
+    public ResponseEntity<?> sellMultiBook(@RequestBody List<Long> books,
                                            @RequestParam Long userId,
                                            @RequestParam Long warehouseId){
         try{
@@ -82,6 +86,18 @@ public class LibraryAppController {
             stocktakingService.updateNumberOfCopies(bookId, warehouseId, numOfCopies);
             return ResponseEntity.status(HttpStatus.OK).build();
         } catch (Exception e) {
+            logger.error(e.toString());
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+        }
+    }
+
+    @PutMapping("/updateUser")
+    @PreAuthorize("hasRole('ROLE_REGISTERED')")
+    public ResponseEntity<?> updateUserData(@RequestBody User user,@RequestParam Long userId){
+        try {
+            logger.info("update user data");
+            return ResponseEntity.status(HttpStatus.OK).body(userService.updateUser(user,userId));
+        }catch (Exception e) {
             logger.error(e.toString());
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
         }
