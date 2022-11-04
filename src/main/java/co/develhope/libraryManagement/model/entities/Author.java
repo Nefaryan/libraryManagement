@@ -28,5 +28,13 @@ public class Author {
     @OneToMany(mappedBy = "author", orphanRemoval = true)
     private Set<Book> books = new LinkedHashSet<>();
 
-
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "(" +
+                "id = " + id + ", " +
+                "name = " + name + ", " +
+                "surname = " + surname + ", " +
+                "dateOfBirth = " + dateOfBirth + ", " +
+                "numberOfBookWrite = " + numberOfBookWrite + ")";
+    }
 }

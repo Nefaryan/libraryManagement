@@ -34,12 +34,6 @@ public class LibraryAppController {
 
     private static final Logger logger = LoggerFactory.getLogger(LibraryAppController.class);
 
-    /*
-    Funzione per effetuare una vendita.
-    Al momento della vendita:
-    - viene generata una fattura
-    - viene aggiornato l'inventario scalando il numero di copie
-     */
     @PostMapping("/sellBook")
     public ResponseEntity<?> sellBook(@RequestParam long bookId,
                                    @RequestParam long userId,

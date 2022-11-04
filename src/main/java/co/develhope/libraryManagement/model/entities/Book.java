@@ -44,4 +44,20 @@ public class Book {
     public void setInvoice(Invoice invoice) {
         this.invoice = invoice;
     }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "(" +
+                "id = " + id + ", " +
+                "title = " + title + ", " +
+                "plot = " + plot + ", " +
+                "pages = " + pages + ", " +
+                "price = " + price + ", " +
+                "ISBN = " + ISBN + ", " +
+                "numberOfEdition = " + numberOfEdition + ", " +
+                "publicationDate = " + publicationDate + ", " +
+                "bookGenre = " + bookGenre + ", " +
+                "availability = " + availability + ", " +
+                "invoice = " + invoice + ")";
+    }
 }
