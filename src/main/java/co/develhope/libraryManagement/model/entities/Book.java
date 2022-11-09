@@ -32,4 +32,32 @@ public class Book {
     private LocalDate publicationDate;
     private String bookGenre;
     private boolean availability;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "invoice_id")
+    private Invoice invoice;
+
+    public Invoice getInvoice() {
+        return invoice;
+    }
+
+    public void setInvoice(Invoice invoice) {
+        this.invoice = invoice;
+    }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() + "(" +
+                "id = " + id + ", " +
+                "title = " + title + ", " +
+                "plot = " + plot + ", " +
+                "pages = " + pages + ", " +
+                "price = " + price + ", " +
+                "ISBN = " + ISBN + ", " +
+                "numberOfEdition = " + numberOfEdition + ", " +
+                "publicationDate = " + publicationDate + ", " +
+                "bookGenre = " + bookGenre + ", " +
+                "availability = " + availability + ", " +
+                "invoice = " + invoice + ")";
+    }
 }

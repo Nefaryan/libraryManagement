@@ -1,0 +1,792 @@
+2022-10-31 08:48:35,612 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LibraryManagementApplication using Java 18.0.1.1 on MSI with PID 2644 (C:\Users\giuse\Desktop\libraryManagement\target\classes started by giuse in C:\Users\giuse\Desktop\libraryManagement)
+2022-10-31 08:48:35,619 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-10-31 08:48:35,717 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-31 08:48:35,718 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-31 08:48:36,644 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-31 08:48:36,708 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 57 ms. Found 8 JPA repository interfaces.
+2022-10-31 08:48:37,461 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-10-31 08:48:37,485 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-31 08:48:37,487 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-10-31 08:48:37,488 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-31 08:48:37,578 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-10-31 08:48:37,579 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1859 ms
+2022-10-31 08:48:37,908 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-31 08:48:37,950 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-10-31 08:48:38,082 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-31 08:48:38,159 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-10-31 08:48:38,475 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-10-31 08:48:38,495 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-10-31 08:48:39,864 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-31 08:48:39,875 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-31 08:48:40,217 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-31 08:48:41,297 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: eb1a702d-1fb4-4ce7-a99d-568dfe25e3c1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-31 08:48:41,444 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@11fb591d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7ebcacd7, org.springframework.security.web.context.SecurityContextPersistenceFilter@47b54c5f, org.springframework.security.web.header.HeaderWriterFilter@35235979, org.springframework.security.web.authentication.logout.LogoutFilter@24b4fc06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@261f2a0d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ce56a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2966120f, org.springframework.security.web.session.SessionManagementFilter@79197067, org.springframework.security.web.access.ExceptionTranslationFilter@43c31d54, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6ada56bc]
+2022-10-31 08:48:41,583 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-10-31 08:48:41,718 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-10-31 08:48:41,735 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-31 08:48:42,121 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LibraryManagementApplication in 7.029 seconds (JVM running for 7.537)
+2022-10-31 08:48:46,576 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-31 08:48:46,578 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-10-31 08:48:46,584 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-10-31 08:49:04,917 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting LibraryManagementApplication using Java 18.0.1.1 on MSI with PID 15224 (C:\Users\giuse\Desktop\libraryManagement\target\classes started by giuse in C:\Users\giuse\Desktop\libraryManagement)
+2022-10-31 08:49:04,919 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2022-10-31 08:49:04,977 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-31 08:49:04,977 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-31 08:49:05,802 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-31 08:49:05,868 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 58 ms. Found 8 JPA repository interfaces.
+2022-10-31 08:49:06,759 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2022-10-31 08:49:06,775 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2022-10-31 08:49:06,775 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-10-31 08:49:06,776 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.68]
+2022-10-31 08:49:06,873 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-10-31 08:49:06,874 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1896 ms
+2022-10-31 08:49:07,162 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-31 08:49:07,204 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-10-31 08:49:07,332 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-31 08:49:07,412 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-10-31 08:49:07,691 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-10-31 08:49:07,701 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2022-10-31 08:49:08,553 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-31 08:49:08,562 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-31 08:49:08,887 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-31 08:49:09,942 WARN org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: 4e45cddb-08ca-42b7-a115-9d803d275223
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-10-31 08:49:09,997 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@36cfc601, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@291f1b99, org.springframework.security.web.context.SecurityContextPersistenceFilter@38fcfdae, org.springframework.security.web.header.HeaderWriterFilter@464d03fe, org.springframework.security.web.authentication.logout.LogoutFilter@44483dcf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@51a1aab0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39e22f5c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a7c51f1, org.springframework.security.web.session.SessionManagementFilter@eb67328, org.springframework.security.web.access.ExceptionTranslationFilter@41978e08, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4c5ead6a]
+2022-10-31 08:49:10,124 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-10-31 08:49:10,317 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2022-10-31 08:49:10,340 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-31 08:49:10,715 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started LibraryManagementApplication in 6.247 seconds (JVM running for 6.964)
+2022-10-31 08:49:48,984 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-31 08:49:48,984 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2022-10-31 08:49:48,985 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2022-10-31 08:49:57,518 INFO co.develhope.libraryManagement.controller.auth.AuthenticationController [http-nio-8080-exec-3] Try to login in the app
+2022-10-31 08:50:20,522 INFO co.develhope.libraryManagement.controller.LibraryAppController [http-nio-8080-exec-4] Selling multi book
+2022-10-31 08:50:42,857 WARN com.zaxxer.hikari.pool.ProxyConnection [http-nio-8080-exec-4] HikariPool-1 - Connection com.mysql.cj.jdbc.ConnectionImpl@91b5678 marked as broken because of SQLSTATE(08S01), ErrorCode(0)
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 21.286 milliseconds ago. The last packet sent successfully to the server was 21.285 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.extract(ResultSetReturnImpl.java:57)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.getResultSet(AbstractLoadPlanBasedLoader.java:390)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:163)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104)
+	at org.hibernate.loader.collection.plan.AbstractLoadPlanBasedCollectionInitializer.initialize(AbstractLoadPlanBasedCollectionInitializer.java:87)
+	at org.hibernate.persister.collection.AbstractCollectionPersister.initialize(AbstractCollectionPersister.java:705)
+	at org.hibernate.event.internal.DefaultInitializeCollectionEventListener.onInitializeCollection(DefaultInitializeCollectionEventListener.java:76)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.initializeCollection(SessionImpl.java:2208)
+	at org.hibernate.collection.internal.AbstractPersistentCollection$4.doWork(AbstractPersistentCollection.java:595)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.withTemporarySessionIfNeeded(AbstractPersistentCollection.java:264)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.initialize(AbstractPersistentCollection.java:591)
+	at org.hibernate.collection.internal.AbstractPersistentCollection.read(AbstractPersistentCollection.java:149)
+	at org.hibernate.collection.internal.PersistentSet.toString(PersistentSet.java:327)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at co.develhope.libraryManagement.model.entities.Author.toString(Author.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:56)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at co.develhope.libraryManagement.model.entities.Author$HibernateProxy$aDJf7VXI.toString(Unknown Source)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at co.develhope.libraryManagement.model.entities.Book.toString(Book.java:12)
+	at com.intellij.rt.debugger.BatchEvaluatorServer.evaluate(BatchEvaluatorServer.java:23)
+	at co.develhope.libraryManagement.service.inventory.InvoiceService.sellmutipleBook(InvoiceService.java:68)
+	at co.develhope.libraryManagement.controller.LibraryAppController.sellMultiBook(LibraryAppController.java:68)
+	at co.develhope.libraryManagement.controller.LibraryAppController$$FastClassBySpringCGLIB$$90f6ec0c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at co.develhope.libraryManagement.controller.LibraryAppController$$EnhancerBySpringCGLIB$$39b8c651.sellMultiBook(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at co.develhope.libraryManagement.JwtTokenFilter.doFilterInternal(JwtTokenFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 21.286 milliseconds ago. The last packet sent successfully to the server was 21.285 milliseconds ago.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:581)
+	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:761)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:700)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:1051)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:665)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:893)
+	... 129 common frames omitted
+Caused by: javax.net.ssl.SSLException: Tag mismatch
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:133)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:371)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:314)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:309)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:123)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1503)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1474)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1059)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at com.mysql.cj.protocol.FullReadInputStream.readFully(FullReadInputStream.java:64)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeaderLocal(SimplePacketReader.java:81)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:63)
+	at com.mysql.cj.protocol.a.SimplePacketReader.readHeader(SimplePacketReader.java:45)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:52)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketReader.readHeader(TimeTrackingPacketReader.java:41)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:54)
+	at com.mysql.cj.protocol.a.MultiPacketReader.readHeader(MultiPacketReader.java:44)
+	at com.mysql.cj.protocol.a.NativeProtocol.readMessage(NativeProtocol.java:575)
+	... 134 common frames omitted
+Caused by: javax.crypto.AEADBadTagException: Tag mismatch
+	at java.base/com.sun.crypto.provider.GaloisCounterMode$GCMDecrypt.doFinal(GaloisCounterMode.java:1591)
+	at java.base/com.sun.crypto.provider.GaloisCounterMode.engineDoFinal(GaloisCounterMode.java:454)
+	at java.base/javax.crypto.Cipher.doFinal(Cipher.java:2501)
+	at java.base/sun.security.ssl.SSLCipher$T13GcmReadCipherGenerator$GcmReadCipher.decrypt(SSLCipher.java:1933)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decodeInputRecord(SSLSocketInputRecord.java:260)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.decode(SSLSocketInputRecord.java:181)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:111)
+	... 147 common frames omitted
+2022-10-31 08:50:42,860 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: 08S01
+2022-10-31 08:50:42,860 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Communications link failure
+
+The last packet successfully received from the server was 21.286 milliseconds ago. The last packet sent successfully to the server was 21.285 milliseconds ago.
+2022-10-31 08:50:42,862 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: null
+2022-10-31 08:50:42,862 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Connection is closed
+2022-10-31 08:50:42,862 INFO org.hibernate.event.internal.DefaultLoadEventListener [http-nio-8080-exec-4] HHH000327: Error performing load command
+org.hibernate.exception.GenericJDBCException: could not prepare statement
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:285)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4521)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4511)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:571)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:539)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:103)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1231)
+	at org.hibernate.internal.SessionImpl.immediateLoad(SessionImpl.java:1043)
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:185)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at co.develhope.libraryManagement.model.entities.Author$HibernateProxy$aDJf7VXI.toString(Unknown Source)
+	at java.base/java.lang.StringConcatHelper.stringOf(StringConcatHelper.java:453)
+	at co.develhope.libraryManagement.model.entities.Book.toString(Book.java:12)
+	at com.intellij.rt.debugger.BatchEvaluatorServer.evaluate(BatchEvaluatorServer.java:23)
+	at co.develhope.libraryManagement.service.inventory.InvoiceService.sellmutipleBook(InvoiceService.java:68)
+	at co.develhope.libraryManagement.controller.LibraryAppController.sellMultiBook(LibraryAppController.java:68)
+	at co.develhope.libraryManagement.controller.LibraryAppController$$FastClassBySpringCGLIB$$90f6ec0c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at co.develhope.libraryManagement.controller.LibraryAppController$$EnhancerBySpringCGLIB$$39b8c651.sellMultiBook(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at co.develhope.libraryManagement.JwtTokenFilter.doFilterInternal(JwtTokenFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at jdk.proxy3/jdk.proxy3.$Proxy93.prepareStatement(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	... 125 common frames omitted
+2022-10-31 08:50:42,863 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: null
+2022-10-31 08:50:42,863 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Connection is closed
+2022-10-31 08:52:17,998 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: null
+2022-10-31 08:52:17,998 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Connection is closed
+2022-10-31 08:52:19,849 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: null
+2022-10-31 08:52:19,850 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Connection is closed
+2022-10-31 08:52:19,850 INFO org.hibernate.event.internal.DefaultLoadEventListener [http-nio-8080-exec-4] HHH000327: Error performing load command
+org.hibernate.exception.GenericJDBCException: could not prepare statement
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:42)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:113)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:151)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.prepareQueryStatement(AbstractLoadPlanBasedLoader.java:198)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeQueryStatement(AbstractLoadPlanBasedLoader.java:162)
+	at org.hibernate.loader.plan.exec.internal.AbstractLoadPlanBasedLoader.executeLoad(AbstractLoadPlanBasedLoader.java:104)
+	at org.hibernate.loader.entity.plan.AbstractLoadPlanBasedEntityLoader.load(AbstractLoadPlanBasedEntityLoader.java:285)
+	at org.hibernate.persister.entity.AbstractEntityPersister.doLoad(AbstractEntityPersister.java:4521)
+	at org.hibernate.persister.entity.AbstractEntityPersister.load(AbstractEntityPersister.java:4511)
+	at org.hibernate.event.internal.DefaultLoadEventListener.loadFromDatasource(DefaultLoadEventListener.java:571)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doLoad(DefaultLoadEventListener.java:539)
+	at org.hibernate.event.internal.DefaultLoadEventListener.load(DefaultLoadEventListener.java:208)
+	at org.hibernate.event.internal.DefaultLoadEventListener.doOnLoad(DefaultLoadEventListener.java:103)
+	at org.hibernate.event.internal.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:74)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:118)
+	at org.hibernate.internal.SessionImpl.fireLoadNoChecks(SessionImpl.java:1231)
+	at org.hibernate.internal.SessionImpl.immediateLoad(SessionImpl.java:1043)
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:185)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:322)
+	at org.hibernate.proxy.pojo.bytebuddy.ByteBuddyInterceptor.intercept(ByteBuddyInterceptor.java:45)
+	at org.hibernate.proxy.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:95)
+	at co.develhope.libraryManagement.model.entities.Author$HibernateProxy$aDJf7VXI.toString(Unknown Source)
+	at com.intellij.rt.debugger.BatchEvaluatorServer.evaluate(BatchEvaluatorServer.java:23)
+	at co.develhope.libraryManagement.service.inventory.InvoiceService.sellmutipleBook(InvoiceService.java:68)
+	at co.develhope.libraryManagement.controller.LibraryAppController.sellMultiBook(LibraryAppController.java:68)
+	at co.develhope.libraryManagement.controller.LibraryAppController$$FastClassBySpringCGLIB$$90f6ec0c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.security.access.intercept.aopalliance.MethodSecurityInterceptor.invoke(MethodSecurityInterceptor.java:61)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at co.develhope.libraryManagement.controller.LibraryAppController$$EnhancerBySpringCGLIB$$39b8c651.sellMultiBook(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at co.develhope.libraryManagement.JwtTokenFilter.doFilterInternal(JwtTokenFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:337)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:115)
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:122)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:126)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:81)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:109)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:149)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:103)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:89)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:112)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:82)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:346)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:221)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:186)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:354)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.sql.SQLException: Connection is closed
+	at com.zaxxer.hikari.pool.ProxyConnection$ClosedConnection.lambda$getClosedConnection$0(ProxyConnection.java:515)
+	at jdk.proxy3/jdk.proxy3.$Proxy93.prepareStatement(Unknown Source)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:337)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:149)
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:176)
+	... 123 common frames omitted
+2022-10-31 08:52:21,300 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: null
+2022-10-31 08:52:21,301 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Connection is closed
+2022-10-31 08:52:51,690 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: null
+2022-10-31 08:52:51,690 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Connection is closed
+2022-10-31 08:53:59,211 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m51s387ms229µs400ns).
+2022-10-31 08:53:59,225 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] SQL Error: 0, SQLState: null
+2022-10-31 08:53:59,227 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-4] Connection is closed
+2022-10-31 08:53:59,229 ERROR co.develhope.libraryManagement.controller.LibraryAppController [http-nio-8080-exec-4] org.springframework.orm.jpa.JpaSystemException: could not prepare statement; nested exception is org.hibernate.exception.GenericJDBCException: could not prepare statement
+2022-10-31 08:53:59,232 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@23a0640e<rs=HikariProxyResultSet@401826304 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,232 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@64a35302<rs=HikariProxyResultSet@774061056 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,232 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6f933ad5<rs=HikariProxyResultSet@1350284808 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,232 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@11459d87<rs=HikariProxyResultSet@554187401 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,232 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@31651bb5<rs=HikariProxyResultSet@1149567113 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,233 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4fa065d8<rs=HikariProxyResultSet@984572557 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,233 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3993ab6b<rs=HikariProxyResultSet@801566353 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,233 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@487b07b<rs=HikariProxyResultSet@1430658068 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,233 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1d26bbed<rs=HikariProxyResultSet@485209237 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,233 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@51649334<rs=HikariProxyResultSet@1273267990 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,233 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7588b280<rs=HikariProxyResultSet@964301590 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,233 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4cb5c022<rs=HikariProxyResultSet@1163977385 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,233 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6464f38a<rs=HikariProxyResultSet@667281585 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,234 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@116c2101<rs=HikariProxyResultSet@573915442 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,234 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@21c08d1e<rs=HikariProxyResultSet@1170378163 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,234 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4316fdd4<rs=HikariProxyResultSet@1555928628 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,234 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2dbe9f<rs=HikariProxyResultSet@134014516 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,234 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7039f3b2<rs=HikariProxyResultSet@105326902 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,234 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@553428d6<rs=HikariProxyResultSet@1357097911 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,234 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@21b897f9<rs=HikariProxyResultSet@1857766327 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,234 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4c0c1c17<rs=HikariProxyResultSet@247197627 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,234 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7317c247<rs=HikariProxyResultSet@140464829 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@711266b<rs=HikariProxyResultSet@207425342 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@62737e2f<rs=HikariProxyResultSet@44015168 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4e333ad2<rs=HikariProxyResultSet@753998916 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3fbdca9<rs=HikariProxyResultSet@133232966 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@d5780c3<rs=HikariProxyResultSet@233945160 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@742c1540<rs=HikariProxyResultSet@337630409 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@239e54bd<rs=HikariProxyResultSet@2135306699 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7e5ddaf3<rs=HikariProxyResultSet@1570015691 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4f3d0c63<rs=HikariProxyResultSet@238195788 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5baf86d1<rs=HikariProxyResultSet@1946666189 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,235 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@a451aa5<rs=HikariProxyResultSet@1264824525 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,237 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1adfd35c<rs=HikariProxyResultSet@1587201104 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,237 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3da69a70<rs=HikariProxyResultSet@301481427 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,237 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1a980a1b<rs=HikariProxyResultSet@814890459 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,237 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@382abbdf<rs=HikariProxyResultSet@930283995 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,237 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5c8bdab5<rs=HikariProxyResultSet@2087807451 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,238 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@55f7be4e<rs=HikariProxyResultSet@1681921886 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,238 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@f65ae39<rs=HikariProxyResultSet@401574879 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,238 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@627c1849<rs=HikariProxyResultSet@1482585692 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,238 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@602028c1<rs=HikariProxyResultSet@222542690 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,238 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@8cdff45<rs=HikariProxyResultSet@998732392 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,238 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2afb8c03<rs=HikariProxyResultSet@604464361 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,239 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@28476745<rs=HikariProxyResultSet@311998955 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,239 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@49c024ac<rs=HikariProxyResultSet@1876839020 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,239 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2e90dd06<rs=HikariProxyResultSet@1133967597 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,239 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@58fdc743<rs=HikariProxyResultSet@528673134 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,239 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4b93fe56<rs=HikariProxyResultSet@1636798830 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,239 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3be56cc<rs=HikariProxyResultSet@994673260 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,239 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2beed350<rs=HikariProxyResultSet@389945968 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,239 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1d9fdeb1<rs=HikariProxyResultSet@2030569209 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,240 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@492af21a<rs=HikariProxyResultSet@1030653572 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,240 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3853d5c5<rs=HikariProxyResultSet@1188795782 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,240 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@65fae5cc<rs=HikariProxyResultSet@997974535 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,240 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@673d594<rs=HikariProxyResultSet@146566280 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,240 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@18575d62<rs=HikariProxyResultSet@539490956 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,240 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3e8c5e50<rs=HikariProxyResultSet@1630400398 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,240 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@cea08c8<rs=HikariProxyResultSet@16831632 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,240 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@142db3b4<rs=HikariProxyResultSet@465099537 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,240 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3633501e<rs=HikariProxyResultSet@1446953108 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,241 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6a11f656<rs=HikariProxyResultSet@1280990485 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,241 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@36611f94<rs=HikariProxyResultSet@936522138 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,241 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4f28aaff<rs=HikariProxyResultSet@1928150043 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,241 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6337b0a4<rs=HikariProxyResultSet@538988958 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,241 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@67149d2<rs=HikariProxyResultSet@1562457631 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,241 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@38526b37<rs=HikariProxyResultSet@2034236447 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,241 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@32275190<rs=HikariProxyResultSet@1496461343 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,241 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6ccb65e0<rs=HikariProxyResultSet@1120810664 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,241 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@60789e72<rs=HikariProxyResultSet@691835048 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,241 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4b584a99<rs=HikariProxyResultSet@1402205485 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,242 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@437b39b3<rs=HikariProxyResultSet@758899630 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,242 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7428a059<rs=HikariProxyResultSet@778733998 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,242 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@50072ba0<rs=HikariProxyResultSet@1232101552 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,242 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5982bfbb<rs=HikariProxyResultSet@2029128372 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,242 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@432ea399<rs=HikariProxyResultSet@2081317814 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,242 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7235e9cd<rs=HikariProxyResultSet@1211903672 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,243 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1b869600<rs=HikariProxyResultSet@1981697595 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,243 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@57b59dac<rs=HikariProxyResultSet@1776158267 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,243 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@61b1dea8<rs=HikariProxyResultSet@2065266747 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,243 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3c1738d2<rs=HikariProxyResultSet@825248831 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,243 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@138e9fc6<rs=HikariProxyResultSet@897155264 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,244 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@68ad28e6<rs=HikariProxyResultSet@699115071 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,244 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@786efc5<rs=HikariProxyResultSet@896433985 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,244 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2d2864f<rs=HikariProxyResultSet@822328899 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,244 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6545597c<rs=HikariProxyResultSet@613834565 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@642eb72a<rs=HikariProxyResultSet@1172027975 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@546684ad<rs=HikariProxyResultSet@768926408 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@42108090<rs=HikariProxyResultSet@213921097 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@d51bf17<rs=HikariProxyResultSet@595108556 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1cd7de70<rs=HikariProxyResultSet@1102636752 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7c7462ab<rs=HikariProxyResultSet@1116732753 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3aa679b5<rs=HikariProxyResultSet@556555218 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3a0fc0f1<rs=HikariProxyResultSet@2023773650 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1809ad9e<rs=HikariProxyResultSet@184528721 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@47b7e50e<rs=HikariProxyResultSet@1510209877 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,245 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4e55579c<rs=HikariProxyResultSet@584288722 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,247 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@a990eef<rs=HikariProxyResultSet@2021976280 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,247 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5f29377f<rs=HikariProxyResultSet@846713560 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,247 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@274e2601<rs=HikariProxyResultSet@231741789 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,247 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@43c37cc3<rs=HikariProxyResultSet@46005855 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,247 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1efec22<rs=HikariProxyResultSet@292637791 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,247 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@17eba1af<rs=HikariProxyResultSet@136524895 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,247 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@41c3f37d<rs=HikariProxyResultSet@1014168933 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,248 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@19bebae2<rs=HikariProxyResultSet@350722280 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,248 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@67cecb0b<rs=HikariProxyResultSet@1184696298 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,248 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2d62e884<rs=HikariProxyResultSet@1040142826 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,248 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7364be4e<rs=HikariProxyResultSet@1474669421 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,248 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1fe1636a<rs=HikariProxyResultSet@1985348973 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,248 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@ee6650e<rs=HikariProxyResultSet@872181230 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@347a9a9e<rs=HikariProxyResultSet@9710445 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@623ac491<rs=HikariProxyResultSet@184934769 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@76d4118f<rs=HikariProxyResultSet@782674418 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4ba7d44e<rs=HikariProxyResultSet@811055219 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2be919ce<rs=HikariProxyResultSet@334124788 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1fc35e6e<rs=HikariProxyResultSet@71169268 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@49cd7c70<rs=HikariProxyResultSet@1808120431 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3cbdc4a3<rs=HikariProxyResultSet@194023152 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5f799d93<rs=HikariProxyResultSet@1532777849 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5acc883c<rs=HikariProxyResultSet@986146939 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@784041e9<rs=HikariProxyResultSet@493933953 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2a8a0a9e<rs=HikariProxyResultSet@1551696644 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@398c9f59<rs=HikariProxyResultSet@391577989 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,249 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7bf6d3c<rs=HikariProxyResultSet@900768262 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,250 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7d8a2b2b<rs=HikariProxyResultSet@2050909706 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,250 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@72e00fe<rs=HikariProxyResultSet@129647626 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,250 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5a852115<rs=HikariProxyResultSet@284144658 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,250 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@26af61f4<rs=HikariProxyResultSet@1326954643 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,250 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@a50c579<rs=HikariProxyResultSet@349616791 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,250 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7d0e1d3d<rs=HikariProxyResultSet@578734872 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,250 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@e701600<rs=HikariProxyResultSet@153500057 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,250 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@538d66fb<rs=HikariProxyResultSet@1031498395 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,250 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5f7a0afe<rs=HikariProxyResultSet@775125276 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,250 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@529013d9<rs=HikariProxyResultSet@208260251 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,251 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5c5ecf9d<rs=HikariProxyResultSet@166219552 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,251 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@645cc053<rs=HikariProxyResultSet@999782176 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,251 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6bfe0bdc<rs=HikariProxyResultSet@2032394274 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,251 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3922d3a1<rs=HikariProxyResultSet@174062884 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,251 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@13aac13f<rs=HikariProxyResultSet@112547749 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,251 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@11f6c541<rs=HikariProxyResultSet@1965735 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,251 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@acd8c48<rs=HikariProxyResultSet@1274363176 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,252 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@25ddf96b<rs=HikariProxyResultSet@181188521 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,252 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@603b67d6<rs=HikariProxyResultSet@2118301355 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,252 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@47407a5d<rs=HikariProxyResultSet@807746094 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,252 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@21090131<rs=HikariProxyResultSet@249858223 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,252 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6bd5b2da<rs=HikariProxyResultSet@1238899504 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,252 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@506b7da1<rs=HikariProxyResultSet@2117827888 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,253 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@143d7763<rs=HikariProxyResultSet@235585969 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,253 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7d54ec5c<rs=HikariProxyResultSet@1435178929 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,253 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3b51d24e<rs=HikariProxyResultSet@1141137845 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,253 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@30dc36f0<rs=HikariProxyResultSet@1023356982 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,253 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4f25c9e7<rs=HikariProxyResultSet@1374024758 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1549ea53<rs=HikariProxyResultSet@817838646 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@20bf9916<rs=HikariProxyResultSet@1056758072 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@71855047<rs=HikariProxyResultSet@1740498748 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@100ed561<rs=HikariProxyResultSet@408963005 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4acfbe41<rs=HikariProxyResultSet@1558996030 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@16e4f927<rs=HikariProxyResultSet@828387519 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4d3884d4<rs=HikariProxyResultSet@894824510 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2bfbf5cf<rs=HikariProxyResultSet@1739978947 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1c717b47<rs=HikariProxyResultSet@1610008775 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2ded842f<rs=HikariProxyResultSet@611510604 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@247abb62<rs=HikariProxyResultSet@1016829647 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@50db77af<rs=HikariProxyResultSet@1112805587 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@476795b0<rs=HikariProxyResultSet@498849620 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6eaad8f<rs=HikariProxyResultSet@216893139 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,254 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@773aa79b<rs=HikariProxyResultSet@1298046675 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7cd7c0dc<rs=HikariProxyResultSet@933373655 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@76600e3<rs=HikariProxyResultSet@358585555 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@54b34355<rs=HikariProxyResultSet@966873049 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@76172027<rs=HikariProxyResultSet@1706293850 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3484df19<rs=HikariProxyResultSet@1084449120 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@352a072<rs=HikariProxyResultSet@165009760 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4db5f2a6<rs=HikariProxyResultSet@1786869346 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@26ce52f<rs=HikariProxyResultSet@1059114727 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@10028e6c<rs=HikariProxyResultSet@947131244 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@645ed2e<rs=HikariProxyResultSet@983877359 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@64070f82<rs=HikariProxyResultSet@325674993 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@127dbb0<rs=HikariProxyResultSet@1017033971 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5524416<rs=HikariProxyResultSet@666395637 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2c57f50f<rs=HikariProxyResultSet@1839465594 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@70709418<rs=HikariProxyResultSet@1549565949 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4fb53bfd<rs=HikariProxyResultSet@251419137 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5850b4e9<rs=HikariProxyResultSet@1543423747 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4b3cdd61<rs=HikariProxyResultSet@740472712 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3f18504a<rs=HikariProxyResultSet@811035790 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,255 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5994fe87<rs=HikariProxyResultSet@797282575 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,257 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@43efea0<rs=HikariProxyResultSet@2042672274 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,257 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2944fc93<rs=HikariProxyResultSet@2035319059 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,257 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@54a373f1<rs=HikariProxyResultSet@284635798 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,257 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2a3dcf24<rs=HikariProxyResultSet@1732041495 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,257 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5905ff3d<rs=HikariProxyResultSet@417408408 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,257 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@572b20ea<rs=HikariProxyResultSet@148329755 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,257 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@18d8ed05<rs=HikariProxyResultSet@1600989725 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,257 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5c5855d5<rs=HikariProxyResultSet@1556723745 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,257 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2a52b574<rs=HikariProxyResultSet@827015975 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,258 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2470fca4<rs=HikariProxyResultSet@1334273831 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,258 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7b9f9dea<rs=HikariProxyResultSet@755042728 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,258 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@65f789b1<rs=HikariProxyResultSet@2076052650 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,258 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5a31696e<rs=HikariProxyResultSet@603692202 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,258 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@79872b50<rs=HikariProxyResultSet@1551829674 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,258 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7ef09947<rs=HikariProxyResultSet@1813882151 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,258 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@27932d29<rs=HikariProxyResultSet@1810466728 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,259 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@76385aac<rs=HikariProxyResultSet@395048501 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,259 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@36a52290<rs=HikariProxyResultSet@1090267701 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,259 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@4c65bfa2<rs=HikariProxyResultSet@174240184 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,259 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@72a13962<rs=HikariProxyResultSet@1655636666 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,260 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@46f8f0a0<rs=HikariProxyResultSet@1410194364 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,260 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5956eb4d<rs=HikariProxyResultSet@137254078 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,260 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@382fd76a<rs=HikariProxyResultSet@1329405888 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,260 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@43be8324<rs=HikariProxyResultSet@1553553348 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,260 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@42420603<rs=HikariProxyResultSet@1890849353 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2ca09185<rs=HikariProxyResultSet@1121215049 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6af287fc<rs=HikariProxyResultSet@1633367883 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5de29e25<rs=HikariProxyResultSet@962136012 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@f42f984<rs=HikariProxyResultSet@1034378059 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@27467d50<rs=HikariProxyResultSet@1785493839 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@59f5c323<rs=HikariProxyResultSet@856582096 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@10af7d8e<rs=HikariProxyResultSet@1363864657 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@8b938c6<rs=HikariProxyResultSet@453864916 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@1c81687c<rs=HikariProxyResultSet@1339549140 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6b1a4c14<rs=HikariProxyResultSet@618185301 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@b21ff4<rs=HikariProxyResultSet@1125682007 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@410c682c<rs=HikariProxyResultSet@1309774429 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,261 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@56593af9<rs=HikariProxyResultSet@1025710306 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,262 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@6f1aa6ca<rs=HikariProxyResultSet@1919711079 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,262 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7fc75962<rs=HikariProxyResultSet@1258604520 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,262 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@5d2803be<rs=HikariProxyResultSet@881402985 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,262 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@42397410<rs=HikariProxyResultSet@1366924647 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,262 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@78afb66b<rs=HikariProxyResultSet@1654037867 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,262 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3d66fc55<rs=HikariProxyResultSet@709769321 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,262 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@204e2db4<rs=HikariProxyResultSet@287175281 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,263 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@29de5459<rs=HikariProxyResultSet@1462151539 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,263 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2cc7b3e7<rs=HikariProxyResultSet@1891796980 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,263 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@26c9767e<rs=HikariProxyResultSet@812706296 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,263 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@773bdc9e<rs=HikariProxyResultSet@1812397177 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,263 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@2c1c22bc<rs=HikariProxyResultSet@123598328 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,263 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@3dd5e453<rs=HikariProxyResultSet@340800891 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,263 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@50c21f11<rs=HikariProxyResultSet@2053395069 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,263 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@7934e6bb<rs=HikariProxyResultSet@1902133502 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,264 WARN org.hibernate.engine.loading.internal.LoadContexts [http-nio-8080-exec-4] HHH000100: Fail-safe cleanup (collections) : org.hibernate.engine.loading.internal.CollectionLoadContext@347022e3<rs=HikariProxyResultSet@1954789759 wrapping Result set representing update count of 6>
+2022-10-31 08:53:59,372 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-31 08:53:59,374 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-10-31 08:53:59,379 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

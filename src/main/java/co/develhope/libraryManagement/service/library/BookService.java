@@ -27,6 +27,7 @@ public class BookService {
             }
             return newBook;
         }catch (Exception e){
+            e.printStackTrace();
             throw new Exception("Incorrect input");
         }
 
