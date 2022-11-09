@@ -40,10 +40,10 @@ public class WebSecurity extends WebSecurityConfigurerAdapter {
         http.headers().frameOptions().disable();
 
         // Add JWT token filter
-      /*  http.addFilterBefore(
+       http.addFilterBefore(
                 jwtTokenFilter,
                 UsernamePasswordAuthenticationFilter.class
-        );;*/
+        );
     }
 }
 
