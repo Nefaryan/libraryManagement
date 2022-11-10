@@ -12,9 +12,6 @@ import java.time.LocalTime;
 
 @Entity
 @Table(name = "stores")
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class Store extends PlaceOfWork {
 
     @Id
@@ -25,5 +22,31 @@ public class Store extends PlaceOfWork {
     @JoinColumn(name = "warehouse_id")
     private Warehouse warehouse;
 
+    public Store(){}
+    public Store(String name, String city, String address, LocalTime openingTime, LocalTime closingTime, Long id, Warehouse warehouse) {
+        super(name, city, address, openingTime, closingTime);
+        this.id = id;
+        this.warehouse = warehouse;
+    }
 
+    public Store(Long id, Warehouse warehouse) {
+        this.id = id;
+        this.warehouse = warehouse;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Warehouse getWarehouse() {
+        return warehouse;
+    }
+
+    public void setWarehouse(Warehouse warehouse) {
+        this.warehouse = warehouse;
+    }
 }

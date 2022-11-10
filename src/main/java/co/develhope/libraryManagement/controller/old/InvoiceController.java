@@ -21,7 +21,7 @@ public class InvoiceController {
 
     private static final Logger logger = LoggerFactory.getLogger(InvoiceController.class);
 
-    @PostMapping("/create")
+  /*  @PostMapping("/create")
     public ResponseEntity<?> createInvoice(@RequestParam Long bookId,
                                            @RequestParam Long userId){
         try {
@@ -32,7 +32,7 @@ public class InvoiceController {
             logger.error(e.toString());
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
         }
-    }
+    }*/
 
     @GetMapping("/getAll")
     public ResponseEntity<?> getAllInvoice(){

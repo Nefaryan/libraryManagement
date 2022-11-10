@@ -26,6 +26,7 @@ public class InvoiceService {
     @Autowired
     private BookService bookService;
 
+    @Deprecated
     public Invoice create(Long bookId, Long userId) throws Exception {
         try{
             Invoice invoice = new Invoice();
@@ -44,6 +45,8 @@ public class InvoiceService {
             throw new Exception("Incorrect input");
         }
     }
+
+
 
     public Invoice sellmutipleBook(List<Long> bookId,Long userId) throws Exception {
         try {

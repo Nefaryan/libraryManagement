@@ -33,7 +33,7 @@ public class LibraryAppController {
     UserService userService;
 
     private static final Logger logger = LoggerFactory.getLogger(LibraryAppController.class);
-
+    @Deprecated
     @PostMapping("/sellBook")
     public ResponseEntity<?> sellBook(@RequestParam long bookId,
                                    @RequestParam long userId,
