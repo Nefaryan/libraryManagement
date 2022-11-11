@@ -44,6 +44,10 @@ public class SignupService {
         user.setEmail(signupDTO.getEmail());
         user.setSurname(signupDTO.getSurname());
         user.setPassword(passwordEncoder.encode(signupDTO.getPassword()));
+        user.setDateOfBirth(signupDTO.getDateOfBirth());
+        user.setCity(signupDTO.getCity());
+        user.setFiscalCode(signupDTO.getFiscalCode());
+        user.setTelephoneNumber(signupDTO.getTelephoneNumber());
         user.setActivationCode(UUID.randomUUID().toString());
 
         Set<Role> roles = new HashSet<>();

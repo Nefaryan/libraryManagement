@@ -16,7 +16,7 @@ public class SignupDTO {
     private String password;
     private String name;
     private String surname;
-    private String dateOfBirth;
+    private LocalDate dateOfBirth;
     private String city;
     @Column(unique = true)
     private String fiscalCode;

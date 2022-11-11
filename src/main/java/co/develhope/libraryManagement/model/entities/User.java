@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Set;
 
@@ -22,7 +23,7 @@ public class User {
     private String password;
     private String name;
     private String surname;
-    private String dateOfBirth;
+    private LocalDate dateOfBirth;
     private String city;
     @Column(unique = true)
     private String fiscalCode;
@@ -45,7 +46,7 @@ public class User {
 
     public User() {}
 
-    public User(Long id, String username, String password, String name, String surname, String dateOfBirth, String city, String fiscalCode, String telephoneNumber,
+    public User(Long id, String username, String password, String name, String surname, LocalDate dateOfBirth, String city, String fiscalCode, String telephoneNumber,
                 String email, String activationCode, LocalDateTime jwtCreatedOn, String passwordResetCode, boolean isActive, Set<Role> roles) {
         this.id = id;
         this.username = username;
@@ -104,11 +105,11 @@ public class User {
         this.surname = surname;
     }
 
-    public String getDateOfBirth() {
+    public LocalDate getDateOfBirth() {
         return dateOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
+    public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
