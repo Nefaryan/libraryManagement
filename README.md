@@ -20,7 +20,7 @@ Il Software utilizza il protocollo RESTful.
 
 -Linda Amadei: https://github.com/LindaAmadei
 
--Salvatore Emanuele Di Gregoli: 
+-Salvatore Emanuele Di Gregoli: https://github.com/ariosto22
 
 -Jurgen Neziri: https://github.com/JurgenNe91
 
