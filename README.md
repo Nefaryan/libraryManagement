@@ -1,8 +1,8 @@
-# Library Management Software
+# Library Management Software 📚
 
 Il nostro software opera da un singolo punto vendita, ma permette di consultare l’inventario in maniera globale.
 
- E' software web-based, ovvero non è necessario installare alcun programma desktop , sarà possibile accedere via browser dai computer personali del nostro personale, come anche da smartphone o da tablet.
+E' software web-based, ovvero non è necessario installare alcun programma desktop , sarà possibile accedere via browser dai computer personali del nostro personale, come anche da smartphone o da tablet.
 Per questo motivo intendiamo iniziare con la realizzazione di un API in grado di interagire con il nostro database, a cui in seguito poter collegare un frontend web-based e le applicazioni mobile.
 
 ## Tecnologie utilizzate 
@@ -16,14 +16,14 @@ Il Software utilizza il protocollo RESTful.
 
 ## Autori: 
 
--Giuseppe Roberti,
+-Giuseppe Roberti: https://github.com/Nefaryan
 
--Linda Amadei,
+-Linda Amadei: https://github.com/LindaAmadei
 
--Salvatore Emanuele Di Gregoli,
+-Salvatore Emanuele Di Gregoli: https://github.com/ariosto22
 
--Jurgen Neziri,
+-Jurgen Neziri: https://github.com/JurgenNe91
 
--Mario
+-Mario: https://github.com/Marioy96
 
 ### Il progetto si trova ancora nella fase di sviluppo.
