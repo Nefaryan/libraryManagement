@@ -101,13 +101,9 @@ public class StocktakingService {
             stocktakingRepository.save(stocktaking);
         }
         else {
-            // stavo cercando di decrementare il numero di copie (numOfCopies minore di zero) di un inventario
-            // che non esiste
             if (numOfCopies < 0) {
                 throw new Exception(String.format("Cannot find stocktaking for book: %d and warehouse: %d", bookId, warehouseId));
             }
-            // se invece il numero di copie è maggiore di zero allora se l'inventario non esiste non è un errore:
-            // è che deve ancora essere creato
             else {
                 Stocktaking newStocktaking = new Stocktaking();
                 newStocktaking.setBook(bookService.findById(bookId).get());

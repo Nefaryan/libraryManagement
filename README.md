@@ -26,4 +26,4 @@ Il Software utilizza il protocollo RESTful.
 
 -Mario: https://github.com/Marioy96
 
-### Il progetto si trova ancora nella fase di sviluppo.
+
