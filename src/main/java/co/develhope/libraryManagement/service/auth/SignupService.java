@@ -26,8 +26,8 @@ public class SignupService {
     @Autowired
     private RoleRepository roleRepository;
 
-    //@Autowired
-    //private MailNotificationService mailNotificationService;
+    @Autowired
+    private MailNotificationService mailNotificationService;
 
     @Autowired
     private PasswordEncoder passwordEncoder;
@@ -56,7 +56,7 @@ public class SignupService {
         roles.add(userRole.get());
         user.setRoles(roles);
 
-        // mailNotificationService.sendActivationEmail(user);
+         mailNotificationService.sendActivationEmail(user);
         return userRepository.save(user);
     }
 
